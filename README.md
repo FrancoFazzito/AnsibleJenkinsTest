@@ -15,3 +15,7 @@
 ```sh
 ansible-playbook -i inventory.ini playbooks/site.yml
 ```
+
+## Jenkins
+
+Para poder hacer uso del jenkins file tan solo se tendria que crear un nuevo pipeline referenciando a este archivo y ejecutar este dentro del ansible controller con su correspondiente configuracion de SSH hacia el host
