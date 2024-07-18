@@ -28,15 +28,11 @@ graph TD
     Jenkins -->|Run| ControllerAgent
     ControllerAgent -->|Deploy| Node1
     
-    subgraph Repo::Playbook
-        RepoPlaybook
-    end
-    
-    subgraph Controller::Agent
-        ControllerAgent
-    end
-    
-    subgraph Node1
-        Node1
-    end
-```
+    classDef repoPlaybook fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef controllerAgent fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef node1 fill:#bfb,stroke:#333,stroke-width:2px;
+
+    RepoPlaybook:::repoPlaybook
+    ControllerAgent:::controllerAgent
+    Node1:::node1
+
